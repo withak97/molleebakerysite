@@ -6,18 +6,64 @@
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 360px;
-  gap: 28px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-bottom: 48px;
+  height: 30rem;
+  gap: 1rem;
 }
 
-.heroInner {
-  padding: 36px;
+.heroContent {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30rem;
+}
+
+.heroLeft, .heroRight {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
   border-radius: 12px;
-  background: linear-gradient(180deg, rgba(255,250,248,0.8), rgba(255,250,248,0.95));
-  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+  border: #fffaf8 solid 2px;
+}
+
+.heroLeft {
+  background-image: url('/sweetMollee1.jpg');
+}
+
+.heroRight {
+  background-image: url('/sweetMollee2.jpg');
+}
+
+.heroMiddle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fffaf8;
+  padding: 12px;
+}
+
+.heroMiddle h2 {
+  font-size: 24px;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.heroMiddle button {
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 8px 24px rgba(182,106,80,0.18);
+  border: none;
+  cursor: pointer;
 }
 
 .title {
@@ -42,13 +88,6 @@
   color: white;
   font-weight: 600;
   box-shadow: 0 8px 24px rgba(182,106,80,0.18);
-}
-
-.heroImage {
-  height: 40rem;
-  border-radius: 12px;
-  background: linear-gradient(180deg, var(--accent-2), #efe2d6);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
 }
 
 .shopSection {

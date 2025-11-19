@@ -37,21 +37,13 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <section className={styles.hero}>
-        <div className={styles.heroInner}>
-          <h1 className={styles.title}>Mollee's Munchies</h1>
-          <p className={styles.subtitle}>
-            Small-batch pastries & cookies — warm, calm, and thoughtfully baked.
-          </p>
-          <a className={styles.cta} href="#shop">
-            Shop our treats
-          </a>
-        </div>
-        <div className={styles.heroImage} aria-hidden>
-          <img
-            src="/sweetMollee.jpg"
-            alt="Cozy winter scene with scarf and hot drink"
-            style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "12px" }}
-          />
+        <div className={styles.heroContent}>
+          <div className={styles.heroLeft}></div>
+          <div className={styles.heroMiddle}>
+            <h2>Fresh Bread & Baked Goods</h2>
+            <button>Order Here</button>
+          </div>
+          <div className={styles.heroRight}></div>
         </div>
       </section>
 
